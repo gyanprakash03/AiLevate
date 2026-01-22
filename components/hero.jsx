@@ -52,15 +52,27 @@ const HeroSection = () => {
             </Button>
           </Link>
         </div>
-        <div className="hero-image-wrapper mt-5 md:mt-0">
-          <div ref={imageRef} className="hero-image w-[1200px] h-[720px] mx-auto rounded-lg border shadow-2xl overflow-hidden">
+        <div className="hero-image-wrapper mt-8">
+          <div
+            ref={imageRef}
+            className="
+              hero-image
+              relative
+              w-full
+              max-w-6xl
+              aspect-video
+              mx-auto
+              rounded-lg
+              border
+              shadow-2xl
+              overflow-hidden
+            "
+          >
             <Image
               src="/banner-8.jpg"
-              // src="/banner.jpeg"
-              width={1200}
-              height={720}
               alt="Dashboard Preview"
-              className="object-fill"
+              fill
+              className="object-cover"
               priority
             />
           </div>
